@@ -1,23 +1,27 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { AboutComponent } from './about/about.component';
+import { PolicyComponent } from './policy/policy.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
-  // {path:'', redirectTo:'/login', pathMatch:'prefix'},
-  {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent},
-  {path:'home',component:HomeComponent},
-  {path:'about',component:AboutComponent},
-  {path:'profile',component:ProfileComponent},
-  {path:'**',component:NotfoundComponent},
+  {path:'', redirectTo:'/login', pathMatch:'full'},
+  {path:'login', component:LoginComponent},
+  
+  {path:'home', component:HomeComponent},
+  {path:'dashboard', component:DashboardComponent},
+  {path:'about', component:AboutComponent},
+  {path:'policy', component:PolicyComponent},
+  {path:'profile', component:ProfileComponent},
+  {path:'**', component:NotfoundComponent},
+    // children:[
+    // ]
+
+  
 ];
 
 @NgModule({
@@ -25,3 +29,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const  routingComponent = [ LoginComponent,HomeComponent,NotfoundComponent,DashboardComponent,AboutComponent,PolicyComponent,ProfileComponent ]
