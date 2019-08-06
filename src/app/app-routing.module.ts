@@ -7,12 +7,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutComponent } from './about/about.component';
 import { PolicyComponent } from './policy/policy.component';
 import { ProfileComponent } from './profile/profile.component';
+import { LeaveApplyComponent } from './leave-apply/leave-apply.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
   {path:'login', component:LoginComponent},
   
   {path:'home', component:HomeComponent},
+  {path:'leave', component:LeaveApplyComponent},
   {path:'dashboard', component:DashboardComponent},
   {path:'about', component:AboutComponent},
   {path:'policy', component:PolicyComponent},
@@ -29,4 +31,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const  routingComponent = [ LoginComponent,HomeComponent,NotfoundComponent,DashboardComponent,AboutComponent,PolicyComponent,ProfileComponent ]
+export const  routingComponent = [ LoginComponent,HomeComponent,NotfoundComponent,DashboardComponent,AboutComponent,PolicyComponent,ProfileComponent,LeaveApplyComponent ]

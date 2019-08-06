@@ -2,11 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule, routingComponent } from './app-routing.module';
-
 import { AppComponent } from './app.component';
-
 import { HeaderComponent } from './header/header.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +15,12 @@ import { HeaderComponent } from './header/header.component';
     // AboutComponent,
     // PolicyComponent,
     // ProfileComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

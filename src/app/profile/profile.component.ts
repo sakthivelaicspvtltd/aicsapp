@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
+
+  log(x){console.log(x);}
+
+
   public imagePath;
   imgURL: any;
   public message: string;

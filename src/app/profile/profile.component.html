@@ -1,104 +1,338 @@
+
+<section>
 <form action="">
+    <div class="text-center pt-2 pb-3">
+        <h2>Personal Details</h2>
+    </div>
     <div class="col-md-12 row">
         <div class="col-md-4">
-            
-            <div class="form-group bmd-form-group">
-                <!-- manually specified -->
-                <label for="formGroupExampleInput2" class="bmd-label-floating">Another label</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2">
+            <div class="form-group">
+                <label for="firstName" class="">First Name</label>
+                <input type="text" name="firstName" class="form-control" id="firstName">
             </div>
             <div class="form-group">
-                    <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
-                    <label for="formGroupExampleInput" class="bmd-label-floating">Example label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                </div>
-                <div class="form-group bmd-form-group">
-                    <!-- manually specified -->
-                    <label for="formGroupExampleInput2" class="bmd-label-floating">Another label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2">
-                </div>
-                <div class="form-group">
-                        <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
-                        <label for="formGroupExampleInput" class="bmd-label-floating">Example label</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput">
-                    </div>
-                    <div class="form-group bmd-form-group">
-                        <!-- manually specified -->
-                        <label for="formGroupExampleInput2" class="bmd-label-floating">Another label</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2">
-                    </div>
-        </div>
-        <div class="col-md-4">
-            <div class="form-group">
-                <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
-                <label for="formGroupExampleInput" class="bmd-label-floating">Example label</label>
+                <label for="formGroupExampleInput" class="">Contact Number</label>
                 <input type="text" class="form-control" id="formGroupExampleInput">
             </div>
-            <div class="form-group bmd-form-group">
-                <!-- manually specified -->
-                <label for="formGroupExampleInput2" class="bmd-label-floating">Another label</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2">
-            </div>
             <div class="form-group">
-                    <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
-                    <label for="formGroupExampleInput" class="bmd-label-floating">Example label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                </div>
-                <div class="form-group bmd-form-group">
-                    <!-- manually specified -->
-                    <label for="formGroupExampleInput2" class="bmd-label-floating">Another label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2">
-                </div>
-                <div class="form-group">
-                        <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
-                        <label for="formGroupExampleInput" class="bmd-label-floating">Example label</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput">
-                    </div>
-                    <div class="form-group bmd-form-group">
-                        <!-- manually specified -->
-                        <label for="formGroupExampleInput2" class="bmd-label-floating">Another label</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2">
-                    </div>
+                <label for="formGroupExampleInput" class="">Emergency Contact Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
         </div>
         <div class="col-md-4">
             <div class="form-group">
-                <img [src]="imgURL || '../../assets/image/default-user.jpg'" height="200" >
-                <input #file class="" type="file" accept='image/*' (change)="preview(file.files)" />
-            </div> 
-            <div class="form-group bmd-form-group">
-                <!-- manually specified -->
-                <label for="formGroupExampleInput2" class="bmd-label-floating">Another label</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2">
+                <label for="formGroupExampleInput" class="">Last Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
             </div>
             <div class="form-group">
-                    <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
-                    <label for="formGroupExampleInput" class="bmd-label-floating">Example label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                </div>
-                <div class="form-group bmd-form-group">
-                    <!-- manually specified -->
-                    <label for="formGroupExampleInput2" class="bmd-label-floating">Another label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2">
-                </div>
-                <div class="form-group">
-                        <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
-                        <label for="formGroupExampleInput" class="bmd-label-floating">Example label</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput">
+                <label for="formGroupExampleInput" class="">Home Number</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Emergency Contact Number</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="form-group">
+                <img [src]="imgURL || '../../assets/image/default-user.jpg'" height="200" width='200px'>
+                <input #file class="custom-file-input" type="file" accept='image/*' (change)="preview(file.files)"
+                    class="mt-2" />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Email id</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Current Address</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Permanent Address</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 row">
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">DOB</label>
+                <input type="date" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Certificate DOB</label>
+                <input type="date" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Blood Type</label>
+                <select id="country" class="custom-select" name="country">
+                    <option value="">Select Blood ...</option>
+                    <option value="australia">AB +</option>
+                    <option value="canada">B +ve</option>
+                    <option value="usa">O +ve</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Gender</label> <br>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <div class="col-md-4">
+                        <input type="radio" class="custom-control-input" id="customRadio" name="example1">
+                        <label class="custom-control-label " for="customRadio">Male</label>
                     </div>
-                    <div class="form-group bmd-form-group">
-                        <!-- manually specified -->
-                        <label for="formGroupExampleInput2" class="bmd-label-floating">Another label</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2">
+                    <div class="col-md-5">
+                        <input type="radio" class="custom-control-input " id="customRadi1" name="example1">
+                        <label class="custom-control-label" for="customRadi1">Female</label>
                     </div>
+                    <div class="col-md-2">
+                        <input type="radio" class="custom-control-input" id="customRadi2" name="example1">
+                        <label class="custom-control-label" for="customRadi2">Others</label>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+   <div class="text-center p-3">
+    <Button class="btn btn-primary">Save this details</Button> &nbsp;
+    <Button class="btn btn-danger">Cancel</Button>
+   </div>
+</form>
+</section>
+<div class="m-2"></div>
+<section>
+
+
+
+<form action="">
+    <!-- office Details -->
+    <div class="text-center pt-2 pb-3">
+        <h2>Office Details</h2>
+    </div>
+    <div class="col-md-12 custom-control custom-radio custom-control-inline">
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="radio" class="custom-control-input" id="hr" name="OfficeRole">
+                <label class="custom-control-label" for="hr">HR (Human Resorce)</label>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <input type="radio" class="custom-control-input" id="finace" name="OfficeRole">
+                <label class="custom-control-label" for="finace">Finace Manager</label>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="radio" class="custom-control-input" id="admin" name="OfficeRole">
+                <label class="custom-control-label" for="admin">Admin</label>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="radio" class="custom-control-input" id="leader" name="OfficeRole">
+                <label class="custom-control-label" for="leader">Leader</label>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="radio" class="custom-control-input" id="emp" name="OfficeRole">
+                <label class="custom-control-label" for="emp">Employee</label>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Employee id</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Date Of Joining</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Last date of Promotion</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Desingation</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Office email ID</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Office Phone Number</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Reporting Manager</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Type Of Holiday</label>
+                <select id="country" class="custom-select" name="country">
+                    <option value="">Select Holiday ...</option>
+                    <option value="">Indian</option>
+                    <option value="">Test</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Type of Employee</label>
+                <select id="country" class="custom-select" name="country">
+                    <option value="">Select Employee...</option>
+                    <option value="">Permanet</option>
+                    <option value="">Training</option>
+                    <option value="">Contract</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3">
+        <Button class="btn btn-primary">Save this details</Button> &nbsp;
+    <Button class="btn btn-danger">Cancel</Button>
+    </div>
+</form>
+</section>
+
+<div class="m-2"></div>
+<section>
+
+
+<form action="">
+    <!-- Salary Details -->
+    <div class="text-center pt-2 pb-3">
+        <h2>Salary Details</h2>
+    </div>
+
+    <div class="col-md-12 row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Bank Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Account Number</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">PAN Number</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">PF Number</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">PF UAN Number</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">ESI Number</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
         </div>
     </div>
 
-    <!-- <div class="col-md-12">
-        <div class="row"><h2>Employee Details</h2></div>
-            <label for="formGroupExampleInput" class="bmd-label-floating">Example label</label>
-                <input type="text" id="formGroupExampleInput" class="form-control" placeholder="Name">
+    <div class="col-md-12 row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Basic</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">HRA</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
             </div>
         </div>
-        <div class="col-md-6"></div>
-    </div> -->
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Conveyance</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Medical Allowance</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Special Allowance</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="formGroupExampleInput" class="">Travel Allowance</label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+            </div>
+        </div>
+    </div>
+   <div class="text-center p-3">
+    <Button class="btn btn-primary">Save this details</Button> &nbsp;
+    <Button class="btn btn-danger">Cancel</Button>
+    </div>
 </form>
+
+
+
+</section>
