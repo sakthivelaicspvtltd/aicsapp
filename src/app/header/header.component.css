@@ -1,7 +1,7 @@
 
-nav a:active {
-    background-color:#10ABCD;
-    color: #ffffff;
-    padding: 8px 12px;
+.activ {
+    background-color:#109A99;
+    box-sizing: border-box;
+    color: white !important;
     direction: none;
 }

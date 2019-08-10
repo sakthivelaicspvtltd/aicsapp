@@ -31,9 +31,10 @@
     width: 150px;
     border-radius: 50%;
     border: 2px solid white;
+    padding: 4px;
 }
 .form_container {
-    margin-top: 100px;
+    margin-top: 40px;
 }
 .login_btn {
     width: 100%;
